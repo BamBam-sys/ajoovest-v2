@@ -28,7 +28,7 @@ const Nav = () => {
         <li className="">About</li>
         <li className="">FAQs</li>
         {dropdown && (
-          <ul className="dropdown ">
+          <ul className="dropdown">
             <li>Ajoovest for you</li>
             <li>Ajoovest Agent</li>
             <li>Ajoovest Enterprise</li>
