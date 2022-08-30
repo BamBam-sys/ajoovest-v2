@@ -1,0 +1,72 @@
+@import './sass/mediaQueries.scss';
+@import './sass/resets.scss';
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('./assets/fonts/metropolis/Metropolis-Regular.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('./assets/fonts/metropolis/Metropolis-Medium.otf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('./assets/fonts/metropolis/Metropolis-Bold.otf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('./assets/fonts/century-gothic/GOTHICB0.TTF');
+  font-weight: 700;
+}
+
+.bodyText {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 22.4px;
+}
+
+.buttonText {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 14px;
+}
+
+.bodySmall {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+.bodyBold {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.subTitle {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 2%;
+}
+
+.headerTwo {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.3%;
+}
+
+.brand {
+  font-family: $centuryGothic;
+  font-size: 2.4rem;
+  color: #000;
+  font-weight: 700;
+  line-height: 32.4px;
+}
