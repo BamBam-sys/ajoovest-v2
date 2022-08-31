@@ -1,0 +1,17 @@
+.faqs {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  display: flex;
+  justify-content: space-between;
+
+  .img {
+    position: relative;
+    .dots {
+      width: 15rem;
+      height: 15rem;
+      position: absolute;
+      bottom: -10rem;
+      z-index: -1;
+    }
+  }
+}

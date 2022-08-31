@@ -4,11 +4,20 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-
-  padding: 15rem 10.3rem;
+  padding: 15rem 10.3rem 10rem;
 
   .left {
     .text {
+      .headerText {
+        position: relative;
+
+        .fancyUnderline {
+          position: absolute;
+          top: 8.1rem;
+          right: 0;
+        }
+      }
+
       .unique {
         background: $primaryBrandColor;
         color: white;

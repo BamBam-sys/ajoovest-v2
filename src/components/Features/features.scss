@@ -1,0 +1,60 @@
+@import '../../sass/variables.scss';
+
+.features {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  h2 {
+    text-align: center;
+  }
+
+  .featureList {
+    margin-top: 8.6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10rem;
+
+    .featureImg {
+      justify-self: center;
+      position: relative;
+
+      .iphoneBase {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        box-shadow: 1px 1px 10px 5px rgba(242, 242, 242, 0.35);
+      }
+    }
+
+    .featureText {
+      width: 80%;
+      align-self: center;
+      justify-self: center;
+      font-family: $sourceSansPro;
+
+      .bodyBold {
+        color: $primaryBrandColor;
+        margin-bottom: 1.1rem;
+      }
+
+      .headerTwo {
+        margin-bottom: 1.2rem;
+      }
+
+      .bodyText {
+        margin-bottom: 2.3rem;
+      }
+
+      .downloadBtns {
+        width: 70%;
+        display: flex;
+        gap: 2rem;
+      }
+
+      .btn {
+        width: 40%;
+      }
+    }
+  }
+}

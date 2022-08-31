@@ -35,6 +35,36 @@ export const StyledButton = styled.button`
   }
 `;
 
+export const StyledDownloadButton = styled.button`
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  background: #fff;
+  padding: 0.8rem 1.8rem;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  column-gap: 1.2rem;
+  cursor: pointer;
+
+  .icon {
+    width: 2rem;
+    grid-row: 1/3;
+    align-self: center;
+  }
+
+  .text {
+    justify-self: start;
+    font-size: 1.2rem;
+    line-height: 14.4px;
+  }
+
+  .device {
+    justify-self: start;
+    font-size: 2rem;
+    line-height: 24px;
+  }
+`;
+
 export const StyledBrand = styled.div`
   display: flex;
   align-items: center;
