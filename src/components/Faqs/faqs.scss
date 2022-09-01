@@ -2,10 +2,17 @@
   padding-top: 10rem;
   padding-bottom: 10rem;
   display: flex;
-  justify-content: space-between;
+  gap: 7.4rem;
+
+  .text {
+    flex: 1;
+  }
 
   .img {
     position: relative;
+    flex: 1;
+    align-self: start;
+
     .dots {
       width: 15rem;
       height: 15rem;

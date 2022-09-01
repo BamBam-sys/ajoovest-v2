@@ -1,0 +1,36 @@
+@import '../../sass/variables.scss';
+
+.accordion {
+  padding: 2.4rem 3rem 2.4rem 0;
+  position: relative;
+
+  .label {
+    margin-bottom: 1.3rem;
+    // position: relative;
+  }
+
+  .content {
+    color: #808080;
+    // position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s ease-in;
+  }
+
+  .icon {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    right: 0;
+    top: 2.4rem;
+    cursor: pointer;
+  }
+
+  //   &.active .content {
+  //     height: 67px;
+  //   }
+}
+
+.accordion:not(:last-child) {
+  border-bottom: 1px solid $accentColor;
+}
