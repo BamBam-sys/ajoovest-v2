@@ -12,6 +12,7 @@ const colors = {
   accentColor: '#ecf1f4',
 };
 
+// eslint-disable-next-line no-unused-vars
 const fonts = {
   metropolis: `'Metropolis', sans - serif`,
   sourceSansPro: `'Source Sans Pro', sans-serif`,
