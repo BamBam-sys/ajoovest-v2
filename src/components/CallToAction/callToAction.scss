@@ -1,0 +1,43 @@
+@import '../../sass/variables.scss';
+
+.callToAction {
+  padding: 10rem 0;
+
+  .cta {
+    background: #17252a;
+    padding: 9.9rem 30rem;
+    color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    h2 {
+      margin-bottom: 2rem;
+    }
+
+    p {
+      margin-bottom: 3.8rem;
+    }
+
+    .btns {
+      display: flex;
+      gap: 3.8rem;
+      width: 55%;
+    }
+
+    .dotOne {
+      position: absolute;
+      top: 7rem;
+      left: 32.5rem;
+    }
+
+    .dotTwo {
+      position: absolute;
+      bottom: 1.5rem;
+      right: 15rem;
+    }
+  }
+}

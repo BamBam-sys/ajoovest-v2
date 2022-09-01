@@ -5,5 +5,15 @@ import Features from './Features/Features';
 import HowItWorks from './HowItWorks/HowItWorks';
 import Faqs from './Faqs/Faqs';
 import Accordion from './Accordion/Accordion';
+import CallToAction from './CallToAction/CallToAction';
 
-export { Nav, Hero, Testimonials, Features, HowItWorks, Faqs, Accordion };
+export {
+  Nav,
+  Hero,
+  Testimonials,
+  Features,
+  HowItWorks,
+  Faqs,
+  Accordion,
+  CallToAction,
+};

@@ -1,4 +1,11 @@
-import { Features, Hero, Nav, HowItWorks, Faqs } from './components';
+import {
+  Features,
+  Hero,
+  Nav,
+  HowItWorks,
+  Faqs,
+  CallToAction,
+} from './components';
 function App() {
   return (
     <div className="App">
@@ -7,6 +14,7 @@ function App() {
       <Features />
       <HowItWorks />
       <Faqs />
+      <CallToAction />
     </div>
   );
 }
