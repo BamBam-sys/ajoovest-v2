@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Brand } from '../../common';
+import { Brand, Button } from '../../common';
 import './footer.scss';
 
 const Footer = () => {
@@ -79,6 +79,22 @@ const Footer = () => {
           Live Chat
         </Link>
       </div>
+      <form>
+        <div className="formElement">
+          <label className="bodyBold" htmlFor="email">
+            Join the waitlist!
+          </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+          />
+        </div>
+        <div className="btn">
+          <Button text={'submit'} />
+        </div>
+      </form>
     </div>
   );
 };
