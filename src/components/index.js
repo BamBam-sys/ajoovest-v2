@@ -6,6 +6,7 @@ import HowItWorks from './HowItWorks/HowItWorks';
 import Faqs from './Faqs/Faqs';
 import Accordion from './Accordion/Accordion';
 import CallToAction from './CallToAction/CallToAction';
+import Footer from './Footer/Footer';
 
 export {
   Nav,
@@ -16,4 +17,5 @@ export {
   Faqs,
   Accordion,
   CallToAction,
+  Footer,
 };

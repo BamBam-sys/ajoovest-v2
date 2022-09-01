@@ -1,0 +1,33 @@
+@import '../../sass/variables.scss';
+
+.footerSection {
+  padding: 10rem 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 7rem;
+
+  .brand {
+    .text {
+      margin-top: 1.8rem;
+      font-family: $sourceSansPro;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 32px;
+    }
+  }
+
+  .product,
+  .features,
+  .resources,
+  .socials {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .link:link,
+    .link:visited {
+      text-decoration: none;
+      color: $altTextColor;
+    }
+  }
+}

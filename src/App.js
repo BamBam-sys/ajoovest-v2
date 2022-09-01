@@ -5,6 +5,7 @@ import {
   HowItWorks,
   Faqs,
   CallToAction,
+  Footer,
 } from './components';
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <HowItWorks />
       <Faqs />
       <CallToAction />
+      <Footer />
     </div>
   );
 }

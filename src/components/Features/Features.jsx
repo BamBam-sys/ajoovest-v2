@@ -7,7 +7,7 @@ import './features.scss';
 
 const Features = () => {
   return (
-    <div className="features container">
+    <div className="featureSection container">
       <h2 className="subTitle">Why Ajoovest?</h2>
       <div className="featureList">
         <div className="featureImg">

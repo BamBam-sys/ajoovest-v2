@@ -1,6 +1,6 @@
 @import '../../sass/variables.scss';
 
-.hero {
+.heroSection {
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -37,10 +37,20 @@
   .right {
     width: 50%;
 
-    .img {
-      position: absolute;
-      top: 12rem;
-      right: 0;
-    }
+    background: conic-gradient(
+      from 178.18deg at 50% 50%,
+      #6c63ff 0deg,
+      rgba(0, 222, 118, 0.25) 221.68deg,
+      #8f00ff 360deg
+    );
+    filter: blur(350px);
+    z-index: -1;
+  }
+
+  .img {
+    position: absolute;
+    top: 12rem;
+    right: 0;
+    z-index: 10;
   }
 }

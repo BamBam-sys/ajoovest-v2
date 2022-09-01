@@ -4,7 +4,7 @@ import './howItWorks.scss';
 
 const HowItWorks = () => {
   return (
-    <div className="howItWorks container">
+    <div className="hiwSection container">
       <h2 className="subTitle">How It Works</h2>
       <div className="stepsContainer">
         <div className="left">

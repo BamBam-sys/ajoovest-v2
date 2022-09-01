@@ -37,7 +37,7 @@ const Faqs = () => {
   ];
 
   return (
-    <div className="faqs container">
+    <div className="faqSection container">
       <div className="text">
         <h2 className="headerTwo">Frequently Asked Questions</h2>
         {faqs.map((faq) => (

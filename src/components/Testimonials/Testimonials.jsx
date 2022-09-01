@@ -4,7 +4,7 @@ import './testimonials.scss';
 
 const Testimonials = () => {
   return (
-    <div className="testimonials">
+    <div className="testimonialSection">
       <img src={userImg} alt="user" className="userImg" />
       <div className="dots">
         <div className="dot active"></div>

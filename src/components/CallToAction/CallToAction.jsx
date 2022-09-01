@@ -6,7 +6,7 @@ import './callToAction.scss';
 
 const CallToAction = () => {
   return (
-    <div className="callToAction container">
+    <div className="ctaSection container">
       <div className="cta">
         <h2 className="headerTwo">Join Ajoovest Family Today!</h2>
         <p className="bodyBold">Ask your Ajoovest Agent near you Today</p>

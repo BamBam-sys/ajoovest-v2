@@ -6,7 +6,7 @@ import { Testimonials } from '../../components';
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="heroSection">
       <div className="left">
         <div className="text">
           <h1 className="headerOne headerText">
@@ -27,9 +27,8 @@ const Hero = () => {
           <Testimonials />
         </div>
       </div>
-      <div className="right">
-        <img className="img" src={heroImg} alt="naira notes" />
-      </div>
+      <div className="right"></div>
+      <img className="img" src={heroImg} alt="naira notes" />
     </div>
   );
 };
