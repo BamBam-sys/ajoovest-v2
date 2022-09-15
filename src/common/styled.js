@@ -21,7 +21,7 @@ const fonts = {
 };
 
 export const StyledButton = styled.button`
-  ${'' /* width: 100%; */}
+  width: 100%;
   border: none;
   padding: 1.5rem 4.25rem;
   background: ${colors.primaryBrandColor};

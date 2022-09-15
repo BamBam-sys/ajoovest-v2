@@ -14,8 +14,8 @@
   }
 
   @if $point == md {
-    // 704px
-    @media (max-width: 44em) {
+    // 736px
+    @media (max-width: 46em) {
       @content;
     }
   }

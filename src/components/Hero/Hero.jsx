@@ -10,8 +10,7 @@ const Hero = () => {
       <div className="left">
         <div className="text">
           <h1 className="headerOne headerText">
-            {' '}
-            A better way to do{' '}
+            A better way to do
             <div className="fancyUnderline">
               <img src={underline} alt="line" />
             </div>

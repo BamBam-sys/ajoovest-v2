@@ -1,4 +1,5 @@
 @import '../../sass/variables.scss';
+@import '../../sass/mediaQueries.scss';
 
 .navbar {
   background: #fff;
@@ -8,66 +9,192 @@
   gap: 3rem;
   padding: 0 10rem;
   height: 8.9rem;
+  position: relative;
 
   .brand {
-    flex: 2;
+    flex: 1;
   }
 
-  .navLinks {
-    flex: 2;
-    position: relative;
+  .nav {
     display: flex;
-    align-items: center;
-    gap: 5rem;
+    justify-content: space-between;
+    flex: 2;
+    gap: 4rem;
 
-    li {
-      list-style-type: none;
-      cursor: pointer;
-      transition: all ease-in-out 400ms;
-
-      &:hover {
-        color: $primaryBrandColor;
-      }
-    }
-
-    li.active {
-      color: $secondaryBrandColor;
-    }
-
-    li.products {
+    .navLinks {
+      flex: 2;
+      position: relative;
       display: flex;
       align-items: center;
-      gap: 1rem;
+      gap: 5rem;
 
-      .dropdownIcon {
-        font-size: 1.5rem;
-        font-weight: bold;
+      .mobileBrand {
+        display: none;
+      }
+
+      li {
+        list-style-type: none;
+        cursor: pointer;
+        transition: all ease-in-out 400ms;
+
+        &:hover {
+          color: $primaryBrandColor;
+        }
+      }
+
+      li.active {
+        color: $secondaryBrandColor;
+      }
+
+      li.products {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .dropdownIcon {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+
+        .mobileDropdown {
+          display: none;
+        }
+      }
+
+      .dropdown {
+        display: flex;
+        flex-direction: column;
+        gap: 2.2rem;
+        background: #fff;
+        padding: 2.4rem 0;
+        width: 19.4rem;
+        position: absolute;
+        top: 5.5rem;
+        left: 9.5rem;
+        box-shadow: 1px 1px 10px 5px rgba(242, 242, 242, 0.25);
+        border-radius: 20px;
+        z-index: 1;
+
+        li {
+          padding: 0 3rem;
+        }
+
+        li:nth-child(1),
+        li:nth-child(2) {
+          padding-bottom: 1rem;
+          border-bottom: 1px solid rgba(32, 178, 171, 0.2);
+        }
       }
     }
 
-    .dropdown {
+    .btn {
+      flex-shrink: 0;
       display: flex;
-      flex-direction: column;
-      gap: 2.2rem;
-      background: #fff;
-      padding: 2.4rem 0;
-      width: 19.4rem;
+      justify-content: flex-end;
+    }
+
+    // .nav
+    @include breakpoint(md) {
+      // display: none;
+      transform: translateX(-100%);
+      background: $bgLightColor;
+      background: rgba(255, 255, 255, 0.76);
+      backdrop-filter: blur(10px);
+      width: 40rem;
+      height: 100vh;
       position: absolute;
-      top: 3.5rem;
-      left: 9.5rem;
-      box-shadow: 1px 1px 10px 5px rgba(242, 242, 242, 0.25);
-      border-radius: 20px;
-      z-index: 1;
+      top: 0;
+      left: 0;
+      border-top: 1px solid rgba(32, 178, 171, 0.2);
+      flex-direction: column;
+      justify-content: normal;
+      z-index: 100;
+      transition: all 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
 
-      li {
+      .navLinks {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        flex: initial;
+        // padding-top: 5rem;
+
+        .mobileBrand {
+          display: block;
+          width: 100%;
+          padding: 3rem 2.5rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .closeIcon {
+            font-size: 2.5rem;
+            cursor: pointer;
+          }
+        }
+
+        .link {
+          width: 100%;
+          padding: 2.5rem 3rem;
+          border-bottom: 1px solid rgba(32, 178, 171, 0.15);
+        }
+
+        .link.products {
+          justify-content: space-between;
+          align-items: flex-start;
+
+          .label {
+            display: inline-block;
+          }
+
+          .mobileDropdown {
+            display: block;
+            color: $textColor;
+            padding-left: 2rem;
+            height: 0;
+            overflow: hidden;
+            transition: height 0.2s ease-in;
+
+            li {
+              margin-top: 1.5rem;
+            }
+          }
+        }
+        .dropdown {
+          display: none;
+        }
+      }
+
+      .btn {
+        width: 100%;
         padding: 0 3rem;
+        align-items: flex-start;
+        justify-content: center;
+        flex: initial;
+        // margin-left: 3rem;
       }
+    }
+  }
 
-      li:nth-child(1),
-      li:nth-child(2) {
-        padding-bottom: 1rem;
-        border-bottom: 1px solid rgba(32, 178, 171, 0.2);
-      }
+  .menu {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #000;
+    cursor: pointer;
+    display: none;
+
+    @include breakpoint(md) {
+      display: block;
+    }
+  }
+
+  // .navbar
+  @include breakpoint(md) {
+    padding: 5rem;
+
+    &.openSideNav .nav {
+      box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.8);
+      transform: translateX(0);
     }
   }
 }
