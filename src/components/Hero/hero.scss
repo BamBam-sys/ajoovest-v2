@@ -1,12 +1,19 @@
 @import '../../sass/variables.scss';
+@import '../../sass/mediaQueries.scss';
 
 .heroSection {
   display: flex;
   justify-content: space-between;
   position: relative;
-  padding: 15rem 10.3rem 10rem;
+  padding-top: 15rem;
+
+  @include breakpoint(lg) {
+    flex-direction: column;
+    gap: 10rem;
+  }
 
   .left {
+    flex: 1;
     .text {
       .headerText {
         position: relative;
@@ -25,32 +32,85 @@
 
       p {
         margin-top: 2.7rem;
-        width: 35rem;
+        width: 50%;
+
+        @include breakpoint(xs) {
+          width: 100%;
+        }
       }
     }
 
     .testimonial {
       margin-top: 9.4rem;
     }
+
+    @include breakpoint(lg) {
+      width: 100%;
+      text-align: center;
+      align-self: center;
+
+      .text {
+        .headerText {
+          line-height: 1;
+
+          .fancyUnderline {
+            display: none;
+          }
+        }
+
+        p {
+          margin: 1.5rem auto 0;
+        }
+      }
+    }
   }
 
   .right {
-    width: 50%;
+    flex: 1;
+    // background: conic-gradient(
+    //   from 178.18deg at 50% 50%,
+    //   #6c63ff 0deg,
+    //   rgba(0, 222, 118, 0.25) 221.68deg,
+    //   #8f00ff 360deg
+    // );
+    // filter: blur(350px);
+    // z-index: -1;
 
-    background: conic-gradient(
-      from 178.18deg at 50% 50%,
-      #6c63ff 0deg,
-      rgba(0, 222, 118, 0.25) 221.68deg,
-      #8f00ff 360deg
-    );
-    filter: blur(350px);
-    z-index: -1;
-  }
+    .img {
+      position: relative;
+      display: block;
+      right: -32%;
 
-  .img {
-    position: absolute;
-    top: 12rem;
-    right: 0;
-    z-index: 10;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        padding-bottom: 100%;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        background: rgba(84, 164, 188, 0.05);
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+
+        width: 80%;
+        padding-bottom: 80%;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        background: rgba(84, 164, 188, 0.025);
+      }
+    }
+
+    @include breakpoint(lg) {
+      // align-self: flex-end;
+    }
   }
 }

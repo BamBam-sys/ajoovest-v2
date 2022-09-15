@@ -1,4 +1,5 @@
 @import '../../sass/variables.scss';
+@import '../../sass/mediaQueries.scss';
 
 .featureSection {
   padding-top: 10rem;
@@ -47,13 +48,42 @@
       }
 
       .downloadBtns {
-        width: 70%;
         display: flex;
         gap: 2rem;
+
+        @include breakpoint(xs) {
+          flex-direction: column;
+
+          & > div {
+            width: 20rem;
+          }
+        }
+      }
+    }
+
+    @include breakpoint(lg) {
+      grid-template-columns: 1fr;
+      row-gap: 12rem;
+
+      .featureImg:nth-child(1) {
+        grid-row: 2;
       }
 
-      .btn {
-        width: 40%;
+      .featureText {
+        .bodyBold {
+          margin-bottom: 1.6rem;
+        }
+
+        .headerTwo {
+          margin-bottom: 1.7rem;
+        }
+
+        .bodyText {
+          margin-bottom: 2.8rem;
+        }
+
+        .downloadBtns {
+        }
       }
     }
   }

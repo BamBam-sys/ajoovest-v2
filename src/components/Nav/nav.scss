@@ -105,7 +105,6 @@
       position: absolute;
       top: 0;
       left: 0;
-      border-top: 1px solid rgba(32, 178, 171, 0.2);
       flex-direction: column;
       justify-content: normal;
       z-index: 100;
@@ -173,6 +172,10 @@
         flex: initial;
         // margin-left: 3rem;
       }
+    }
+
+    @include breakpoint(sm) {
+      width: 30rem;
     }
   }
 

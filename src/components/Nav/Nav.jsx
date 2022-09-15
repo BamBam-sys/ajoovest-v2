@@ -21,6 +21,7 @@ const Nav = () => {
   }, [sideNav]);
 
   const handleSideNav = () => setSideNav(!sideNav);
+
   const openSideNav = sideNav ? 'openSideNav' : '';
 
   return (
@@ -40,6 +41,7 @@ const Nav = () => {
             onClick={() => {
               setDropdown(!dropdown);
               setAccordionOpen(!accordionOpen);
+
               accordionOpen
                 ? (ref.current.style.height = 0)
                 : (ref.current.style.height = ref.current.scrollHeight + 'px');
@@ -72,7 +74,7 @@ const Nav = () => {
           )}
         </ul>
         <div className="btn">
-          <Button text={'Get Started'} />
+          <Button styles={{ width: '100%' }} text={'Get Started'} />
         </div>
       </div>
 

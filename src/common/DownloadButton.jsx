@@ -3,9 +3,9 @@ import { StyledDownloadButton } from './styled';
 import googlePlay from '../assets/images/google-play.png';
 import apple from '../assets/images/apple.png';
 
-const DownloadButton = ({ device }) => {
+const DownloadButton = ({ device, styles }) => {
   return (
-    <StyledDownloadButton>
+    <StyledDownloadButton style={styles}>
       <div className="icon">
         <img src={device === 'Apple' ? apple : googlePlay} alt="icon" />
       </div>

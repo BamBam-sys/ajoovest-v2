@@ -24,8 +24,12 @@ const Features = () => {
             preferred agents nationwide.
           </p>
           <div className="downloadBtns">
-            <DownloadButton device={'Apple'} />
-            <DownloadButton device={'Android'} />
+            <div>
+              <DownloadButton device={'Apple'} />
+            </div>
+            <div>
+              <DownloadButton device={'Android'} />
+            </div>
           </div>
         </div>
         <div className="featureText">
