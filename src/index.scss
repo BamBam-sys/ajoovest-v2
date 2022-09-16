@@ -90,8 +90,13 @@
   .bodyBold,
   .subTitle,
   .headerOne,
-  .headerTwo,
-  .brand {
+  .headerTwo {
     line-height: 1.3;
+  }
+}
+
+@include breakpoint(lg) {
+  .brand {
+    line-height: 1;
   }
 }

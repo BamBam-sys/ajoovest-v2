@@ -1,4 +1,5 @@
 @import '../../sass/variables.scss';
+@import '../../sass/mediaQueries.scss';
 
 .footerSection {
   padding: 10rem 0;
@@ -70,5 +71,19 @@
         width: 30%;
       }
     }
+  }
+
+  @include breakpoint(lg) {
+    column-gap: 4rem;
+  }
+
+  @include breakpoint(md) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  @include breakpoint(sm) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4rem;
   }
 }

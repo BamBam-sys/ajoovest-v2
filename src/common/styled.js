@@ -68,18 +68,17 @@ export const StyledDownloadButton = styled.button`
 
 export const StyledBrand = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  width: 100%;
 
   .brandLogo {
-    img {
-      width: 1.3rem;
-      ${'' /* transform: translateY(-5px); */}
-    }
+    width: 1.3rem;
+
     .up {
-      transform: translateY(4px);
+      transform: translateY(25%);
     }
     .down {
-      transform: translateY(-4px);
+      transform: translateY(-25%);
     }
   }
 `;
