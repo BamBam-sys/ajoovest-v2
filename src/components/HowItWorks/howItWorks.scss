@@ -1,6 +1,7 @@
 @import '../../sass/variables.scss';
+@import '../../sass/mediaQueries.scss';
 
-.hiwSection {
+.howSection {
   padding-top: 10rem;
   padding-bottom: 10rem;
 
@@ -12,9 +13,14 @@
     margin-top: 15.4em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
 
     .left {
       justify-self: center;
+
+      @include breakpoint(lg) {
+        display: none;
+      }
     }
 
     .right {
@@ -62,6 +68,10 @@
             }
           }
         }
+      }
+
+      @include breakpoint(lg) {
+        grid-column: 1/-1;
       }
     }
   }

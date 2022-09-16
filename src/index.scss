@@ -84,3 +84,14 @@
   width: 124.4rem;
   margin: 0 auto;
 }
+
+@include breakpoint(xs) {
+  .bodyText,
+  .bodyBold,
+  .subTitle,
+  .headerOne,
+  .headerTwo,
+  .brand {
+    line-height: 1.3;
+  }
+}

@@ -11,8 +11,12 @@ const CallToAction = () => {
         <h2 className="headerTwo">Join Ajoovest Family Today!</h2>
         <p className="bodyBold">Ask your Ajoovest Agent near you Today</p>
         <div className="btns">
-          <DownloadButton device={'Apple'} />
-          <DownloadButton device={'Android'} />
+          <div>
+            <DownloadButton device={'Apple'} />
+          </div>
+          <div>
+            <DownloadButton device={'Android'} />
+          </div>
         </div>
         <Dots className="dotOne" />
         <Dots className="dotTwo" />

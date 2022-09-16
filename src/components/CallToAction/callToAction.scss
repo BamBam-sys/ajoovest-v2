@@ -1,11 +1,12 @@
 @import '../../sass/variables.scss';
+@import '../../sass/mediaQueries.scss';
 
 .ctaSection {
   padding: 10rem 0;
 
   .cta {
     background: #17252a;
-    padding: 9.9rem 30rem;
+    padding: 9.9rem 1rem;
     color: #fff;
     border-radius: 20px;
     text-align: center;
@@ -24,8 +25,16 @@
 
     .btns {
       display: flex;
-      gap: 3.8rem;
-      width: 55%;
+      gap: 2rem;
+
+      @include breakpoint(xs) {
+        flex-direction: column;
+        gap: 1rem;
+
+        & > div {
+          width: 20rem;
+        }
+      }
     }
 
     .dotOne {
@@ -38,6 +47,13 @@
       position: absolute;
       bottom: 1.5rem;
       right: 15rem;
+    }
+
+    @include breakpoint(lg) {
+      .dotOne,
+      .dotTwo {
+        display: none;
+      }
     }
   }
 }

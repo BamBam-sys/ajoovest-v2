@@ -1,3 +1,5 @@
+@import '../../sass/mediaQueries.scss';
+
 .faqSection {
   padding-top: 10rem;
   padding-bottom: 10rem;
@@ -19,6 +21,19 @@
       position: absolute;
       bottom: -10rem;
       z-index: -1;
+    }
+  }
+
+  @include breakpoint(lg) {
+    flex-direction: column;
+
+    .img {
+      width: 100%;
+      align-self: center;
+
+      & > img {
+        width: 100%;
+      }
     }
   }
 }
