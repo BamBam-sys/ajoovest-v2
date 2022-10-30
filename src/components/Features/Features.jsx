@@ -23,14 +23,6 @@ const Features = () => {
             periodic contributions (ajoo, esusu, adaji, akawo) with your trusted
             preferred agents nationwide.
           </p>
-          <div className="downloadBtns">
-            <div>
-              <DownloadButton device={'Apple'} />
-            </div>
-            <div>
-              <DownloadButton device={'Android'} />
-            </div>
-          </div>
         </div>
         <div className="featureText">
           <div className="bodyBold">Savings</div>
