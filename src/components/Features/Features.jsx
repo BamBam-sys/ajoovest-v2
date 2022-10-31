@@ -2,7 +2,7 @@ import React from 'react';
 import handHeldIphone from '../../assets/images/handeld-iphone-img.png';
 import iphone from '../../assets/images/iphone-img.png';
 import iphoneBase from '../../assets/images/iphone-base.png';
-import { Button, DownloadButton } from '../../common';
+import { Button } from '../../common';
 import './features.scss';
 
 const Features = () => {
