@@ -5,24 +5,28 @@
   font-family: 'Metropolis';
   src: url('./assets/fonts/metropolis/Metropolis-Regular.otf');
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Metropolis';
   src: url('./assets/fonts/metropolis/Metropolis-Medium.otf');
   font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Metropolis';
   src: url('./assets/fonts/metropolis/Metropolis-Bold.otf');
   font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Century Gothic';
   src: url('./assets/fonts/century-gothic/GOTHICB0.TTF');
   font-weight: 700;
+  font-display: swap;
 }
 
 .bodyText {
