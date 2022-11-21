@@ -72,13 +72,15 @@ export const StyledBrand = styled.div`
   width: 100%;
 
   .brandLogo {
-    width: 1.3rem;
+    width: 12rem;
 
-    .up {
+    ${
+      '' /* .up {
       transform: translateY(25%);
     }
     .down {
       transform: translateY(-25%);
+    } */
     }
   }
 `;

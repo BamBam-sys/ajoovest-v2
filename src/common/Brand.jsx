@@ -1,16 +1,11 @@
 import React from 'react';
 import { StyledBrand } from './styled';
-import brandLogo from '../assets/images/brand-logo.png';
+import brandLogo from '../assets/images/ajoovest-logo.png';
 
 const Brand = () => {
   return (
     <StyledBrand className="brand">
-      <div className="brandLogo">
-        <img className="up" src={brandLogo} alt="logo" />
-        <img className="down" src={brandLogo} alt="logo" />{' '}
-      </div>
-      <span>|</span>
-      <div className="brandText">Ajoovest</div>
+      <img className="brandLogo" src={brandLogo} alt="logo" />
     </StyledBrand>
   );
 };
